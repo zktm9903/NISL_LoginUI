@@ -6,7 +6,7 @@ const BackDiv = styled.div`
     align-items: center;
     justify-content: center;
     height:100vh;
-    background: linear-gradient(to right top,#3399FF,#1D41F0);
+    background: linear-gradient(to right top,#1E2230, #0E0E0E);
     
 `
 

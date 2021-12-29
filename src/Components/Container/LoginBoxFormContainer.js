@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import styled from "styled-components";
 import { useState } from "react";
 import Modal from 'react-modal';
+import Main from "../../Main";
 
 const FormControl = styled(Form.Control)`
     width: 400px;
@@ -39,7 +40,7 @@ const LoginBoxFormContainer = () => {
                 Submit
             </Button>
             <Modal2 isOpen={isOpen}>
-                This is Modal content
+                <Main />
             </Modal2>
         </Form>
     )

@@ -5,6 +5,7 @@ const LoginBoxPresenter = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
     width:500px;
     height:400px;
     border-radius:50px;
