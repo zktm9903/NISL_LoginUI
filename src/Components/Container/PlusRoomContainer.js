@@ -6,7 +6,7 @@ const RoomNameInput = styled(FormControl)`
     margin:30px;
 `
 
-const PlusRoomContainer = ({ set, setShow }) => {
+const PlusRoomContainer = ({ set, setShow, InsertRoom, InputRoomName }) => {
     return (
         <Modal
             show={set}
@@ -20,12 +20,13 @@ const PlusRoomContainer = ({ set, setShow }) => {
             <RoomNameInput
                 aria-label="Default"
                 aria-describedby="inputGroup-sizing-default"
+                onChange={InputRoomName}
             />
             <Modal.Footer>
                 <Button variant="secondary" onClick={setShow}>
                     Close
                 </Button>
-                <Button variant="primary">Understood</Button>
+                <Button variant="primary" onClick={InsertRoom}>OK</Button>
             </Modal.Footer>
         </Modal>
     )
