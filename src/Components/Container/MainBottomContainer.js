@@ -3,6 +3,7 @@ import MainLeftNavContainer from "./MainLeftNavContainer"
 import MainChannelNavContainer from "./MainChannelNavContainer"
 import { useSelector, useDispatch } from 'react-redux';
 import { addRoom } from "../modules/roomAndChannel";
+import MainChatContainer from "./MainChatContainer";
 
 const UnderDiv = styled.div`
     display:flex;
@@ -21,6 +22,7 @@ const MainBottomContainer = () => {
         <UnderDiv>
             <MainLeftNavContainer store={store} addRoomFunc={addRoomFunc} />
             <MainChannelNavContainer />
+            <MainChatContainer />
         </UnderDiv>
     )
 }

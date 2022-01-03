@@ -7,7 +7,6 @@ const BackDiv = styled.div`
     justify-content: center;
     height:100vh;
     background: linear-gradient(to right top,#1E2230, #0E0E0E);
-    
 `
 
 const Login = () => {
